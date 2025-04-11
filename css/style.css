@@ -1,0 +1,169 @@
+* 
+    {
+        box-sizing: border-box;
+    }
+  
+body 
+    {
+        margin: 0;
+        font-family:"Poppins";
+    }
+    img {
+        max-width:100%;
+        border-radius: 3%;
+    }
+.wrapper 
+    {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+/* --------------------------------------------------------------- */
+h1
+    {
+        font-size:2.027rem;
+    }
+h2
+    {
+        font-size:1.802rem;
+        text-align: center;
+    }
+h3
+    {
+        font-size:1.266rem;
+    }
+/* --------------------------------------------------------------- */
+header .wrapper 
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+ul 
+    {
+        list-style: none;
+        display: flex;
+    }
+ul li
+    {
+        margin-left: 20px;
+        text-transform: uppercase;
+    }
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+/* --------------------------------------------------------------- */
+#sweetheart .images
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .images img:nth-child(1){
+        grid-column: 1 / 4;
+    }
+/* --------------------------------------------------------------- */
+#text a:link 
+    {
+        display: inline-block;
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+        border: 2px solid #000;
+        border-radius: 4px;
+
+        margin-top: auto;
+        padding: 10px;
+    }
+/* --------------------------------------------------------------- */
+#behind
+    {
+        background-color: #f8fafc;
+    }
+/* --------------------------------------------------------------- */
+#people 
+    {
+        background-color: #000;
+        color: #fff;
+    }
+
+#people .quotes 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+blockquote
+    {
+        margin: 0;
+    }
+/* --------------------------------------------------------------- */
+#try .products 
+    {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+.products article 
+    {
+        background-color: #f8fafc;
+        border-radius: 3%;
+    }
+
+.products img
+    {
+        border-radius: 3% 3% 0 0;
+    }
+/* --------------------------------------------------------------- */
+footer
+    {
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+        padding: 4px;
+    }
+/* --------------------------------------------------------------- */
+    @media(min-width:768px) {
+       #sweetheart .images
+        {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+        }
+        .images img:nth-child(1) {
+            grid-column: 1/1;
+        }
+
+        #behind .paragraphs{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        #people .quotes{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px; 
+        }
+
+        #try .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr;
+            gap: 30px;  
+        }
+    }
+    @media(min-width:960px) {
+        .intro {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+    }
